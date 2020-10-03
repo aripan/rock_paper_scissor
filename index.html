@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Rock paper and scissors</title>
+  </head>
+  <body>
+    <section class="game">
+      <!-- scoreBoard -->
+      <div class="score fadeOut">
+        <div class="player-score">
+          <h2>Player</h2>
+          <p>0</p>
+        </div>
+        <div class="computer-score">
+          <h2>Computer</h2>
+          <p>0</p>
+        </div>
+      </div>
+
+      <!-- introScreen -->
+      <div class="intro">
+        <h1>Rock, Paper and Scissors</h1>
+        <h2>Rock beats scissor</h2>
+        <h2>Paper beats rock</h2>
+        <h2>Scissor beats paper</h2>
+
+        <!-- playBtn -->
+        <button>Let's Play</button>
+      </div>
+
+      <!-- match -->
+      <div class="match fadeOut">
+        <h2 class="winner">Choose an option</h2>
+
+        <!-- hands -->
+        <div class="hands">
+          <!-- playerHand -->
+          <img class="player-hand" src="./assets/rock.png" alt="" />
+
+          <!-- computerHand -->
+          <img class="computer-hand" src="./assets/rock.png" alt="" />
+        </div>
+        <br />
+        <br />
+
+        <!-- options -->
+        <div class="options">
+          <button class="rock">rock</button>
+          <button class="paper">paper</button>
+          <button class="scissors">scissors</button>
+        </div>
+        <br />
+      </div>
+
+      <!-- tableContents -->
+      <div class="table-row fadeOut">
+        <div class="next">
+          <button id="next-round" class="gradient-button">Set the Hands</button>
+        </div>
+        <table>
+          <tr>
+            <th>Wins</th>
+            <th>Losses</th>
+            <th>Tied</th>
+          </tr>
+          <tr>
+            <td><span id="winner">0</span></td>
+            <td><span id="loser">0</span></td>
+            <td><span id="tied">0</span></td>
+          </tr>
+        </table>
+
+        <!-- Reset Button -->
+        <!-- <a href="/" class="reset"
+          ><button type="button" name="button" class="button-3d">
+            RESET THE GAME
+          </button></a
+        > -->
+
+        <button type="button" name="button" class="button-3d">
+          <a href="/">RESET THE GAME</a>
+        </button>
+      </div>
+
+      <br />
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
